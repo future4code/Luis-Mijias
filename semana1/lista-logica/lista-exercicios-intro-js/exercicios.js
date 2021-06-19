@@ -63,12 +63,17 @@ function imprimeInformacoesUsuario() {
 // EXERCÍCIO 05
 function imprimeTresCoresFavoritas() {
   // implemente sua lógica aqui
-  const
-
+  const cor1 = prompt("Digite sua primeria cor favorita:")
+  const cor2 = prompt("Digite sua segunda cor favorita:")
+  const cor3 = prompt("Digite sua terceira cor favorita:")
+  const cores = [cor1,cor2,cor3]
+  console.log(cores)
 }
 
 // EXERCÍCIO 06
-function retornaStringEmMaiuscula(string) {
+function retornaStringEmMaiuscula(s2ring) {
+function retornsegundEmMaiuscula(st3ing) {
+function retornterceirEmMaiuscula(string) {
   // implemente sua lógica aqui
 
 }
