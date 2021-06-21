@@ -160,7 +160,7 @@ console.log([cadastro])
 // 3. Resolva os passos a seguir: 
 
 //     a) Crie uma variável de escopo global que guarde um `array` vazio chamada `carrinho`
-const carrinho []
+let carrinho = []
 const frutasSacolao1 = {
     nome: "morango",
     disponibilidade: true 
@@ -176,9 +176,11 @@ const frutasSacolao3 = {
     disponibilidade: true 
 
 }
-carrinho.push(frutasSacolao1.nome,frutasSacolao2.nome,frutasSacolao3.nome)
+function compras(frutasSacolao1,frutasSacolao2,frutasSacolao3){
+    carrinho.push(frutasSacolao1,frutasSacolao2,frutasSacolao3)
+}
+compras(frutasSacolao1,frutasSacolao2,frutasSacolao3)
 console.log(carrinho)
-
 
 //     b) Crie três novos objetos que representem frutas de um sacolão. Eles devem ter as seguintes propriedades: nome (`string`) e disponibilidade (`boolean` - devem começar como `true`)
 
