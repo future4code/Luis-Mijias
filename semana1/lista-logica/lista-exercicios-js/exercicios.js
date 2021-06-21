@@ -22,47 +22,37 @@ function imprimeMensagem() {
 
 function calculaAreaRetangulo() {
    // implemente sua lógica aqui
-   const altura = Number(prompt("Insira a altura"))
-   const largura = Number(prompt("Insira a largura"))
-   console.log(altura * largura)
+  
 }
 
 //Exercício 2
 
 function imprimeIdade() {
    // implemente sua lógica aqui
-   const anoAtual = Number(prompt("Insira o ano atual"))
-   const anoNascimento = Number(prompt("Insira seu ano de nascimento"))
-   console.log(anoAtual - anoNascimento)
+  
 }
 
 //Exercício 3
 
 function calculaIMC(peso, altura) {
    // implemente sua lógica aqui
-   return peso / (altura * altura)
+  
 }
 
 //Exercício 4
 
 function imprimeInformacoesUsuario() {
    // implemente sua lógica aqui
-   const nome = prompt("Digite  seu nome")
-   const idade = prompt("Digite sua idade")
-   const email = prompt("Digite seu email")
+   
 
-   console.log(`Meu nome é ${nome}, tenho ${idade} anos, e o meu email é ${email}.`)
+   
 }
 
 //Exercício 5
 
 function imprimeTresCoresFavoritas() {
    // implemente sua lógica aqui
-   const cor1 = prompt("Insira a primeira cor favorita:")
-   const cor2 = prompt("Insira a segunda cor favorita:")
-   const cor3 = prompt("Insira a terceira cor favorita:")
    
-   console.log([cor1,cor2,cor3])
 }
 
 //Exercício 6

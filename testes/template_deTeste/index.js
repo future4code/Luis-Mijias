@@ -6,4 +6,4 @@ function areaTriangulo(base, altura){
 }
 
 const area = areaTriangulo(5, 3)
-console.log("Area do triângulo", area,"cm")
+console.log("Area do triângulo", area,"cm") 
