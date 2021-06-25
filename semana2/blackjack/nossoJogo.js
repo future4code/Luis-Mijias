@@ -122,15 +122,21 @@ console.log("Boas Vindas ao jogo de Blackjack!")
 
         let somaCartaComputador = cartasComputador[0].valor + cartasComputador[1].valor 
 
-        console.log(`Usuário - cartas : ${cartasUsuario[0].texto} , ${cartasUsuario[1].texto}    ${somaCartaUsuario} ` )
-        console.log(`Computador - cartas : ${cartasComputador[0].texto} - pontuação ${cartasComputador[1].texto}`)
+        console.log(`Usuário - cartas : ${cartasUsuario[0].texto} , ${cartasUsuario[1].texto} - pontuação:  ${somaCartaUsuario} ` )
+        console.log(`Computador - cartas : ${cartasComputador[0].texto} ,${cartasComputador[1].texto} - pontuação: ${somaCartaComputador}`)
 
-
-
-         
+        if (somaCartaComputador > somaCartaUsuario){
+          console.log("O computar venceu!!!")
+         } else if (somaCartaUsuario > somaCartaComputador){
+           console.log("Voce venceu !!!") 
+         } else {
+           console.log("Empate!!")
+         }   
+      
+        
    
     }else{
-       console.log("O jogo acabou!!!")
+      console.log("O jogo acabou!!!")
       
       }
 
