@@ -1,0 +1,43 @@
+h1 {
+    color:blue
+
+    }
+h2 {
+    color: rgb(17, 139, 64);
+
+}    
+p {
+    color: rgb(47, 61, 187);
+}  
+a {
+    margin-right: 30px;
+    color: rgb(0, 119, 255);
+    
+} 
+tr {
+    color:green;
+    display: ;
+    
+}
+
+div {
+    color: rgb(21, 100, 146);
+    background-color: skyblue;
+}
+.texto_secundario {
+        color: darkcyan;
+    }
+#unico {
+    color: teal;
+}
+
+.div-titulo {
+    display:block;
+       
+}
+
+.div-menu {
+    display: inline-table;
+    background-color: rgb(13, 224, 189);
+    
+}
