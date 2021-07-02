@@ -30,6 +30,7 @@ img {
 }
 
 div>p:first-child {
+    
     display: inline;
 }
 
@@ -51,6 +52,7 @@ div img {
 }
 
 .container {
+   
     height: 500px;
     text-align: center;
 }
@@ -65,6 +67,7 @@ div img {
   *  ESTILOS HOME 
   *
   **/
+
 
 #container-de-descricao {
     background-color: #2274a5;
