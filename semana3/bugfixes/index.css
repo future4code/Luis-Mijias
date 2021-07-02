@@ -13,6 +13,14 @@
     font-family: 'roboto';
     src: url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 }
+/* foi criada uma class table e nela ultilizada um position*/
+table{
+  position:relative;
+  left: 20%;
+  width: 65%; 
+}
+
+
 /* adiconei o @font-face no css e coloquei o link da mesma fonte do home*/
 h2 {
     background-color: #fe7e02;
@@ -39,7 +47,7 @@ img {
 }
 
 div>p:first-child {
-    
+       
     display: inline;
 }
 
