@@ -5,10 +5,15 @@
   **/
 
 * {
+    
     margin: 0;
     padding: 0;
 }
-
+@font-face {
+    font-family: 'roboto';
+    src: url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+}
+/* adiconei o @font-face no css e coloquei o link da mesma fonte do home*/
 h2 {
     background-color: #fe7e02;
     padding: 10px 5px 10px 5px;
