@@ -15,6 +15,10 @@ h2 {
     color: white;
     text-align: center;
 }
+td {
+    text-align: center;
+}
+ /* foi criado a seletor td e a propriedade text-align:center para o mesmo*/
 
 input {
     height: 20px;
