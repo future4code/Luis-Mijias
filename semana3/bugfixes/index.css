@@ -127,10 +127,11 @@ td button:hover {
 /*criei um classe td button:hover e adicionei backgrond-color e color.*/
 
 .container-do-search {
-    margin-top: 20px;
+    margin: 0px 0px 35px 0px;
     height: 100px;
 }
 
+/*EX-09 alterado o comando margin para 0px 0px 35px 0px */
 
 #back-button {
     background-color: white;
