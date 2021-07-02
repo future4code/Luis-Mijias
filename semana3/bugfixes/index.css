@@ -120,6 +120,11 @@ td button {
     border-radius: 5px;
     color: black;
 }
+td button:hover {
+    background-color: orange;
+    color: white;
+}
+/*criei um classe td button:hover e adicionei backgrond-color e color.*/
 
 .container-do-search {
     margin-top: 20px;
