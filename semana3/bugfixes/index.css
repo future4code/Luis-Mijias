@@ -40,8 +40,9 @@ div>p:first-child {
 
 div img {
     background: black;
+    width: 60px;
 }
-
+/* dentro do arquivo css foi criado na classe div img a propriedade width com 60 px */
 .botao-amarelo {
     background-color: #ffaf43;
     width: 250px;
