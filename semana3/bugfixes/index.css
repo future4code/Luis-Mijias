@@ -66,6 +66,10 @@ div img {
     height: 15px;
 }
 
+.lupa {
+    width: 30px;
+ }
+/* foi criada a classe lupa e iserida uma imagem de lupa no tamanho proporcional*/
 
 /** 
   *
