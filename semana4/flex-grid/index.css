@@ -1,12 +1,40 @@
+* {
+    margin: 0px;
+}
+
+
 img {
-    width: 20px;
+    width: 15px;
 }
 header{
+    display: flex;
     background-color:mediumvioletred;
+    justify-content: space-between;
+    text-align: left;
 }
 div{
     background-color: #f2d0e0;
 }
 footer{
+    padding: 8px;
     background-color: mediumvioletred;
+    text-align: center;   
+    
 }
+#container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    
+}
+.container-menu{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+#imagem-bolo-bonito>img{
+    width: 23%;
+     margin: 3px;
+}
+
