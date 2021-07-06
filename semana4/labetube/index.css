@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.videolink {
+    width: 20;
+}
+.imagem-video {
+    width: 90%;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+footer{
+    background-color: red;
+}
+header{
+    background-color: red;
+}
