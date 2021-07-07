@@ -1,18 +1,18 @@
 *{
     margin: 0;
     padding: 0;
-  
+
 }
 
 .videolink {
     width: 20;
     text-align: center;
-   
+
 }
 .imagem-video {
     width: 80%;
     height: 80%;
-    
+
 }
 main{
     display: grid;
@@ -33,10 +33,10 @@ header{
     justify-content: center;
     background-color: white;
     margin-top: 3vh;
-  
-  
 
-  
+
+
+
 }
 .div-footer{
     bottom: 0;
@@ -53,14 +53,14 @@ header{
         bottom: 0;
         position: fixed;
         width: 100%;
-        
+
     background-color: red;
     padding: 3px;
 }
 .somente-video {
     width: 900px;
     background-color: red;
-    
+
 }
 button{
     color: ghostwhite;
