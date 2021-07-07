@@ -1,0 +1,161 @@
+/** 
+  *
+  *  ESTILOS GERAIS 
+  *
+  **/
+
+* {
+    
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+}
+/* foi criada uma class table e nela ultilizada um position*/
+table{
+  position:relative;
+  left: 20%;
+  width: 65%; 
+}
+
+
+/* adiconei o @font-face no css e coloquei o link da mesma fonte do home*/
+h2 {
+    background-color: #fe7e02;
+    padding: 10px 5px 10px 5px;
+    color: white;
+    text-align: center;
+}
+td {
+    text-align: center;
+}
+ /* foi criado a seletor td e a propriedade text-align:center para o mesmo*/
+
+input {
+    height: 20px;
+    width: 500px;
+}
+
+button:focus {
+    color: white;
+}
+
+img {
+    width: 100px;
+}
+
+div>p:first-child {
+       
+    display: inline;
+}
+
+div img {
+    background: black;
+    width: 60px;
+}
+/* dentro do arquivo css foi criado na classe div img a propriedade width com 60 px */
+.botao-amarelo {
+    background-color: #ffaf43;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+.botao-amarelo:hover {
+    background-color: #c44f00;
+}
+
+.container {
+   
+    height: 500px;
+    text-align: center;
+}
+
+.icone {
+    height: 15px;
+}
+
+.lupa {
+    width: 30px;
+ }
+/* foi criada a classe lupa e iserida uma imagem de lupa no tamanho proporcional*/
+
+/** 
+  *
+  *  ESTILOS HOME 
+  *
+  **/
+
+
+#container-de-descricao {
+    background-color: #2274a5;
+    color: white;
+}
+
+#container-de-descricao>ol {
+    padding: 15px 0px;
+}
+
+#container-para-comprar {
+    background-color: #e7eb90;
+}
+
+#container-para-comprar>p {
+    color: #c44f00;
+    padding: 100px 0;
+    font-size: 60px;
+}
+
+
+/**
+  *
+  *  ESTILOS COMPRAR 
+  *
+  **/
+
+div:nth-child(2),
+div:last-child {
+    text-align: center;
+}
+
+table {
+    width: 60%;
+}
+
+td button {
+    background-color: #fadf63;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    color: black;
+}
+td button:hover {
+    background-color: orange;
+    color: white;
+}
+/*criei um classe td button:hover e adicionei backgrond-color e color.*/
+
+.container-do-search {
+    margin: 0px 0px 35px 0px;
+    height: 100px;
+}
+
+/*EX-09 alterado o comando margin para 0px 0px 35px 0px */
+
+#back-button {
+    background-color: white;
+    width: 100px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 10px;
+    color: black;
+}
+
+#back-button:hover {
+    background-color: #635a3d
+}

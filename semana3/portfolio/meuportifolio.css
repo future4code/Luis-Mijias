@@ -1,0 +1,71 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+    background-color: rgb(35, 133, 245);
+    padding: 10px 12px 10px 12px;
+    color: rgb(116, 20, 20);
+    text-align: center;
+}
+
+
+div{
+    background-color: aqua;
+}
+p{  font-weight: bold;
+    font-style: italic;
+    text-indent: 20px;
+}
+
+ul{ padding: 30px;
+    text-indent: 20px;
+}
+
+
+
+/**Index-Meu portifolio  **/
+
+.lista-tecnologias{
+    color: crimson;
+}
+
+.botao-vinho {
+    background-color: rgb(116, 20, 20);
+    width: 250px;
+    height: 25px;
+    padding-bottom: 2.5%;
+    border-radius: 17px;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.botao-vinho:hover {
+    background-color: rgb(99, 90, 61);
+}
+
+
+
+/** projeto1 **/
+
+ 
+
+#back-button {
+    background-color: rgb(116, 20, 20);
+    width: 38px;
+    height: 38px;
+    border: 2px solid rgb(153, 146, 146);
+    border-radius: 12px;
+    font-size: 9px;
+    color: white;
+    margin: 50px;
+}
+
+#back-button:hover {
+    background-color: rgb(99, 90, 61)
+}
+
