@@ -1,18 +1,19 @@
 *{
     margin: 0;
     padding: 0;
+
   
 }
 
 .videolink {
     width: 20;
     text-align: center;
-   
+
 }
 .imagem-video {
     width: 80%;
     height: 80%;
-    
+
 }
 main{
     display: grid;
@@ -21,7 +22,6 @@ main{
     margin-left: 4%;
     overflow: auto;
 }
-
 
 header{
     padding: 1%;
@@ -33,17 +33,16 @@ header{
     justify-content: center;
     background-color: white;
     margin-top: 3vh;
-  
-  
 
-  
+ 
+
 }
 .div-footer{
     bottom: 0;
         position: fixed;
         width: 100%;
         text-align: center;
-    background-color: red;
+   
     padding: 3px;
 }
 .div-footer-videos{
@@ -53,17 +52,17 @@ header{
         bottom: 0;
         position: fixed;
         width: 100%;
-        
-    background-color: red;
+
+ 
     padding: 3px;
 }
 .somente-video {
     width: 900px;
-    background-color: red;
-    
+
+
 }
 button{
-    color: ghostwhite;
+
     border-radius: 10px;
     width: 100px;
     background-color: rgb(7, 56, 52);
