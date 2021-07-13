@@ -5,6 +5,13 @@
   **/
 
 * {
+
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
     
     margin: 0;
     padding: 0;
@@ -22,24 +29,41 @@ table{
 
 
 /* adiconei o @font-face no css e coloquei o link da mesma fonte do home*/
+
 h2 {
     background-color: #fe7e02;
     padding: 10px 5px 10px 5px;
     color: white;
     text-align: center;
 }
+
+
 td {
     text-align: center;
 }
  /* foi criado a seletor td e a propriedade text-align:center para o mesmo*/
 
+
 input {
     height: 20px;
     width: 500px;
+
+    border-width: 0 0 2px 0;
+}
+
+input:focus {
+    outline-width: 0;
+
+
 }
 
 button:focus {
     color: white;
+
+    outline-width: 0;
+}
+
+
 }
 
 img {
@@ -56,6 +80,7 @@ div img {
     width: 60px;
 }
 /* dentro do arquivo css foi criado na classe div img a propriedade width com 60 px */
+
 .botao-amarelo {
     background-color: #ffaf43;
     width: 250px;
@@ -63,6 +88,7 @@ div img {
     border-radius: 5px;
     font-size: 20px;
     color: white;
+
 }
 
 .botao-amarelo:hover {
@@ -70,13 +96,26 @@ div img {
 }
 
 .container {
-   
+
     height: 500px;
     text-align: center;
 }
 
 .icone {
     height: 15px;
+
+    cursor: pointer;
+}
+
+.icone:hover {
+    opacity: 0.6;
+}
+
+.icone:active {
+    opacity: 1;
+}
+
+
 }
 
 .lupa {
@@ -94,14 +133,28 @@ div img {
 #container-de-descricao {
     background-color: #2274a5;
     color: white;
+    padding-top: 150px;
+}
+
+#container-de-descricao>ol {
+    padding: 15px 20px;
+    list-style-position: inside
+
+
+#container-de-descricao {
+    background-color: #2274a5;
+    color: white;
 }
 
 #container-de-descricao>ol {
     padding: 15px 0px;
-}
+
 
 #container-para-comprar {
     background-color: #e7eb90;
+
+    text-align: center;
+
 }
 
 #container-para-comprar>p {
@@ -117,6 +170,10 @@ div img {
   *
   **/
 
+  div > table {
+      margin: 0 auto;
+  }
+
 div:nth-child(2),
 div:last-child {
     text-align: center;
@@ -124,6 +181,9 @@ div:last-child {
 
 table {
     width: 60%;
+
+    text-align: center;
+
 }
 
 td button {
@@ -133,6 +193,26 @@ td button {
     border-radius: 5px;
     color: black;
 }
+
+
+td button:hover {
+    background-color: #99883c;
+    cursor: pointer;
+}
+
+td button:active {
+    color: white;
+}
+
+td > img {
+    width: 50px;
+}
+
+.container-do-search {
+    margin-top: 20px;
+    height: 100px;
+}
+
 td button:hover {
     background-color: orange;
     color: white;
@@ -154,8 +234,17 @@ td button:hover {
     border-radius: 5px;
     font-size: 10px;
     color: black;
+
+    margin: 50px;
+
 }
 
 #back-button:hover {
     background-color: #635a3d
+
+}
+
+.container-do-voltar {
+    text-align: center;
+
 }
