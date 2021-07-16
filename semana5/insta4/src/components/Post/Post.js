@@ -9,9 +9,11 @@ import iconeComentario from '../../img/comment_icon.svg'
 import {SecaoComentario} from '../SecaoComentario/SecaoComentario'
 
 const PostContainer = styled.div`
-  border: 1px solid gray;
-  width: 300px;
-  margin-bottom: 10px;
+  background-color: gray;
+  border: 1rem solid gray;
+  width: 25rem;
+  margin-bottom: 1rem;
+  
 `
 
 const PostHeader = styled.div`
@@ -19,6 +21,7 @@ const PostHeader = styled.div`
   display: flex;
   align-items: center;
   padding-left: 10px;
+  
 `
 
 const PostFooter = styled.div`
@@ -30,9 +33,9 @@ const PostFooter = styled.div`
 `
 
 const UserPhoto = styled.img`
-  height: 30px;
-  width: 30px;
-  margin-right: 10px;
+  height: 2rem;
+  width:  2rem;
+  margin-right: 1rem;
   border-radius: 50%;
 `
 
@@ -50,9 +53,16 @@ class Post extends React.Component {
   }
 
   onClickCurtida = () => {
+    let newNumberLikes
+    if(this.state.curtido) {
+      newNumberLikes = this.state.numeroCurtidas - 1
+    } else {
+      newNumberLikes = this.state.numeroCurtidas + 1
+    }
+
     this.setState({
-     curtido: true,
-     numeroCurtidas: this.state.numeroCurtidas + 1
+     curtido: !this.state.curtido,
+     numeroCurtidas: newNumberLikes
      })    
     console.log('Curtiu!')
 
