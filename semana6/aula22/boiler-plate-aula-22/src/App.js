@@ -22,25 +22,33 @@ class App extends React.Component {
     state = {
       tarefas: [{
         id: Date.now(), // Explicação abaixo
-        texto: 'Texto da tarefa',
-        completa: false // Indica se a tarefa está completa (true ou false)
+        texto: 'WarmUp',
+        completa: "" // Indica se a tarefa está completa (true ou false)
       },
-      {
-        id: Date.now(),
-        texto: 'Texto da segunda tarefa',
-        completa: true // Indica se a tarefa está completa (true ou false)
-      }],
+      // {
+      //   id: Date.now(),
+      //   texto: 'Entrega de Exercícios',
+      //   // completa: "" // Indica se a tarefa está completa (true ou false)}
+      ],
       inputValue: '',
       filtro: ''
     }
 
   componentDidUpdate() {
+    const persistedComments = localStorage.getItem("inputValue");
+
+    if (persistedComments) {
+      this.setState({ tarefas: JSON.parse(persistedComments) });
+    }
+    
 
   };
 
   componentDidMount() {
 
   };
+ 
+  
 
   onChangeInput = (event) => {
     this.setState({inputValue: event.target.value})
@@ -50,16 +58,34 @@ class App extends React.Component {
     console.log('Adicionar Tarefa', this.state.inputValue)
     const novaTarefa = {
     id: Date.now(),
-    texto: 'Texto da segunda tarefa',
-    completa: true // Indica se a tarefa está completa (true ou false)
+    texto: this.state.inputValue,
+    completa: false // Indica se a tarefa está completa (true ou false)
     }
+    const novaListaTarefa = [novaTarefa,...this.state.tarefas]
+    this.setState({tarefas: novaListaTarefa})
   }
 
   selectTarefa = (id) => {
+    console.log ('Marcar Tarefa', id)
+    const novaListaTarefas = this.state.tarefas.map((tarefa) => {
+
+      if(id === tarefa.id){
+        const novaTarefa = { 
+          ...tarefa,
+          completa: !tarefa.completa
+        }
+        return novaTarefa
+      } else{
+        return tarefa
+      }
+
+    })
+    this.setState({tarefas: novaListaTarefas})
 
   }
 
   onChangeFilter = (event) => {
+    this.setState({filtro: event.target.value})
 
   }
 
@@ -77,7 +103,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <h1>Lista de tarefas</h1>
+        <h1>Lista de Tarefas<br></br>  Luis Carlos</h1>
         <InputsContainer>
           <input value={this.state.inputValue} onChange={this.onChangeInput}/>
           <button onClick={this.criaTarefa}>Adicionar</button>
