@@ -1,14 +1,11 @@
 import React from "react";
 import axios from "axios";
 
-const url =
-  "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users";
+const url =  " https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users" ;
 
-const headers = {
-  headers: {
-    Authorization: "luis-mijias-lovelace"
-  }
-};
+
+
+const headers = {  headers: {    Authorization: "luis-mijias-lovelace"  }};
 
 export default class App extends React.Component {
   state = {
@@ -19,9 +16,8 @@ export default class App extends React.Component {
   };
 
   componentDidMount() {
-    this.pegarNome();
-    this.pegarEmail()
-    
+    this.criarUsuario(); 
+    this.pegarNome();      
   }
 
   mudaInputNome = (e) => {
@@ -58,7 +54,7 @@ export default class App extends React.Component {
 
  criarUsuario = () => {
     const body = {
-      nome: this.state.inputNome,
+      name: this.state.inputNome,
       email: this.state.inputEmail     
     };
 
@@ -67,8 +63,7 @@ export default class App extends React.Component {
       .then((res) => {
         console.log(res)
         alert("Usuário adicionado com sucesso");
-        this.setState({ inputNome: "" });
-        this.setState({ inputEmail:"" });
+        this.setState({ inputNome: "",inputEmail:"" });
         this.pegarNome();
         this.pegarEmail();
       })
@@ -87,11 +82,13 @@ export default class App extends React.Component {
       <div>
         <h1>labenusers</h1>
         <input
+          placeholder={"insira seu nome"}
           value={this.state.inputNome}        
           onChange={this.mudaInputNome}
         />
         <br></br>
         <input
+          placeholder={"insira seu e-mail"}
           value={this.state.inputEmail}        
           onChange={this.mudaInputEmail}
         />
