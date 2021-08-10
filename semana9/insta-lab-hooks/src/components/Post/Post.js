@@ -27,12 +27,16 @@ const Post = (props) => {
   };
 
   const onClickComentario = () => {
-    setComentando (!comentando )
+    setComentando (!comentando)
   };
 
   const enviarComentario = (comentario) => {
-    
+    setNumeroComentarios ([...comentarios,comentario])
+    setNumeroComentarios (false)
+    setNumeroComentarios (numeroComentarios + 1)  
+                
   }
+  const iconeCurtida = curtido ? (iconeCoracaoPreto) : (iconeCoracaoBranco)
 
   return (
     <PostContainer>
@@ -51,6 +55,7 @@ const Post = (props) => {
         />
 
         <IconeComContador
+          
           icone={iconeComentario}
           onClickIcone={onClickComentario}
         // valorContador={numeroComentarios}
@@ -62,3 +67,8 @@ const Post = (props) => {
 }
 
 export default Post
+
+
+
+
+// parei no passo 12
