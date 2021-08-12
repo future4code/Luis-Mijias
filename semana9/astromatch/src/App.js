@@ -1,34 +1,43 @@
-import  React  from "react"
+import  React, { useState }  from "react"
 import { HomePage } from "./pages/HomePage/HomePage"
 import { MatchesPage } from "./pages/MatchesPage/MatchesPage"
 
-export default  class App extends React.Component {
+export default function App(){
 
-  //Renderizaçao Condicional
-  // Estado que diz qual é a tela que está aparecendo
-  // Função pra mudar a tela
+  const [telaAtual, setTelaAtual] = useState("HomePage")
 
-  state = {
-    currentScreen: "MatchesPage"
-    // currentScreen: "HomePage"
-  }
 
-  selectPage = () => {
-    switch (this.state.currentScreen){
+
+  const escolherTela = () => {
+    switch (telaAtual) {
       case "MatchesPage":
         return <MatchesPage/>
        case "HomePage":
          return <HomePage/>
          default: 
-         return  <MatchesPage/>
+         return <div>erro</div>
     }
   }
-render(){
+
+  const MatcheTela = (telaAtual) => {
+    setTelaAtual("MatchesPage")
+  }
+
+  const HomeTela = (telaAtual) => { 
+    setTelaAtual("HomePage")
+  }
   return (
-    <div>
-      {this.selectPage()}
+    <div>         
+      Astromatch
+      <br></br>
+      <button onClick = {HomeTela}>Home</button>
+      <button onClick = {MatcheTela}>Ir para Matches</button>
+      <br></br>
+      {escolherTela()}
     </div>
     
   )
 }
-}
+
+
+
