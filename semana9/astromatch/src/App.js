@@ -29,10 +29,8 @@ export default function App(){
   return (
     <div>         
       Astromatch
-      <br></br>
-      <button onClick = {HomeTela}>Home</button>
-      <button onClick = {MatcheTela}>Ir para Matches</button>
-      <br></br>
+      <button onClick = {HomeTela}>HomePage</button>
+      <button onClick = {MatcheTela}>Matches</button>
       {escolherTela()}
     </div>
     
