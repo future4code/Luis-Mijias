@@ -26,7 +26,7 @@ export const HomePage = () => {
         const headerPerson = { "Content-Type": "application/json" }
         const urlPerson = "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/luismijias-lovelace/choose-person"
         const body = {
-            "id ": profile.id,
+            "id": profile.id,
             "choice": choice
         }
 
