@@ -68,7 +68,7 @@ const Post = (props) => {
 
 export default Post
 
-
+  
 
 
 // parei no passo 12
