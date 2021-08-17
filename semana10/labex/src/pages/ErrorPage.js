@@ -1,22 +1,21 @@
 import React from "react"
 
-export const ApplicationFormPage = () => {
+export const ErrorPage = () => {
     return (
         <div>
-            <p>se inscrevendo para vaga
-            </p>
+            <p>Escreveu algo errado na URL favor conferir </p>
             <br></br>
-            <h1>aplicando para vaga</h1>
+            <h1>Error Page</h1>
             <iframe
-                src="https://giphy.com/embed/l0HlHLCqPLdy4ZGmI"
+                src="https://giphy.com/embed/TqiwHbFBaZ4ti"
                 width="480"
-                height="350"
+                height="480"
                 frameBorder="0"
                 class="giphy-embed"
                 allowFullScreen>
             </iframe>
             <p>
-            
+             
             </p>
         </div>
     )
