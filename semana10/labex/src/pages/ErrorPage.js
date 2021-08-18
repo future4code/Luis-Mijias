@@ -1,6 +1,11 @@
 import React from "react"
+import { useHistory } from "react-router"
 
 export const ErrorPage = () => {
+    const history = useHistory()
+    const goToHome = () => {
+        history.push("/")
+    }
     return (
         <div>
             <p>Escreveu algo errado na URL favor conferir </p>
@@ -15,7 +20,7 @@ export const ErrorPage = () => {
                 allowFullScreen>
             </iframe>
             <p>
-             
+             <button onClick={goToHome}>Ir para Home</button>
             </p>
         </div>
     )

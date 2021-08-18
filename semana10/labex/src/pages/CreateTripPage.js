@@ -1,6 +1,12 @@
 import React from "react"
-
+import { useHistory } from "react-router"
 export const CreateTripPage = () => {
+    
+    const history = useHistory()
+    const goToHome = () => {
+        history.push("/")
+    }
+
     return (
         <div>
              <p>Tela Criando Viagens </p>
@@ -15,6 +21,8 @@ export const CreateTripPage = () => {
                 allowFullScreen>
             </iframe>
             <p>
+                <button>Criar</button>
+                <button onClick={goToHome}>Voltar para home</button>
             
             </p>
         </div>
