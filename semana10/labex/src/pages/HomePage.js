@@ -1,4 +1,5 @@
 import React from "react"
+import house from "../Images/house.png"
 import { useHistory } from "react-router"
 
 export const HomePage = () => {
@@ -16,7 +17,7 @@ export const HomePage = () => {
             <p>Tela HomePage </p>
             <br></br>
             <h1>HomePage LabeX</h1>
-            <iframe src="https://giphy.com/embed/5xtDarqCp0eomZaFJW8"
+            <iframe src ={house}
                 width="480"
                 height="360"
                 frameBorder="0"
@@ -24,6 +25,8 @@ export const HomePage = () => {
                 allowFullScreen
             >
             </iframe>
+            
+           
             <p>
            <button onClick={goToListTripsPage}>Ver Viagens</button>
            <button onClick={goToLoginPage}>Login Admin</button>

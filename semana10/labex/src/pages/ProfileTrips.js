@@ -2,38 +2,29 @@ import React from "react"
 import styled from "styled-components"
 
 
-const ProfileTripsContainer = styled.div`
-    margin: 16px;
-    border: 1px solid black;
+
+const ListTripsContainer = styled.div`
+  display: flex;
+   align-items: center;
+   border-bottom: 1px solid gray;
     :hover {
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(300,0,0,0.2);
     }
 `
 
-const ProfilePicture = styled.img`
-    width: 50%;
-    display: block;
-    align-items: center;
-`
-const ProfileInfo = styled.div`
-    padding: 0 16px;
+const GoodTrip = styled.img`
+   border-radius: 50%;
+   margin-right: 8px;
+   height: 30px;
 `
 
-function ProfileTrips(){
+
+function ProfileTrips(props) {   
     return(
-        <ProfileTripsContainer>
-            <ProfilePicture src = {"https://picsum.photos/200/100"}/>
-              
-            
-            <ProfileInfo>        
-                <p>Nome da viagem</p>
-                <p>descriçao da viagem</p>
-                <p>Planeta a ser visitado</p>
-                <p>duraçao da viagem</p>
-                <p>data da viagem</p>
-            </ProfileInfo>
-        </ProfileTripsContainer>
-
+        <ListTripsContainer>
+            <GoodTrip src = "https://picsum.photos/id/1/200/300"/>
+         <p></p>
+        </ListTripsContainer>
     )
 }
 

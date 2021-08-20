@@ -69,6 +69,9 @@ export const LoginPage = () => {
         title={"Numero minimo de caracteres aceitos 6 !!"}
       />
       <button >Logar</button>
+      <hr></hr>
+
+      <p>email: astrodev@gmail.com.br---------    senha: 123456</p>
       </form>
     </div>
   )
