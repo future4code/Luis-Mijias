@@ -8,6 +8,7 @@ import { AddRecipeButton, RecipeListContainer } from './style'
 import { Add } from '@material-ui/icons'
 import { useHistory } from 'react-router-dom'
 import { goToAddRecipes, goToRecipeDetail } from '../../routes/coodinator'
+import Loading from '../../components/Loading/Loading'
 
 const RecipesListPage = () => {
     useProtectedPage()
@@ -30,7 +31,7 @@ const RecipesListPage = () => {
     })
     return (
         <RecipeListContainer>
-            {recipeCards}
+            {recipeCards.length > 0 ? recipeCards : <Loading/> }
             <AddRecipeButton
             color={'primary'}
             onClick={()=>goToAddRecipes(history)}

@@ -5,6 +5,7 @@ import useRequestData from '../../hooks/useRequestData'
 import { BASE_URL } from '../../constants/urls'
 import { RecipeContainer, RecipeImage, ScreenContainer } from './styled'
 import { Typography } from '@material-ui/core'
+import Loading from "../../components/Loading/Loading"
 
 
 const RecipeDetailPage = () => {
@@ -14,12 +15,15 @@ const RecipeDetailPage = () => {
     
     return (
         <ScreenContainer>
-                {recipe &&
+                {recipe ?
                 <RecipeContainer>
                 <RecipeImage src={recipe.image} />                                     
                 <Typography gutterBottom align={'center'} variant={'h5'} color={'primary'}>{recipe && recipe.title}</Typography>
                 <Typography align={'center'}>{recipe.description}</Typography> 
-                </RecipeContainer>}
+                </RecipeContainer>
+                :
+                <Loading/>
+                }
         </ScreenContainer>
     )
 }

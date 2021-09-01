@@ -2,25 +2,38 @@ import axios from 'axios'
 import {BASE_URL} from '../constants/urls'
 import {goToRecipesList} from '../routes/coodinator'
 
-export const login = (body, clear, history, setRightButtonText) => {
+export const login = (body, clear, history, setRightButtonText, setIsLoading) => {
+    setIsLoading(true)
     axios.post(`${BASE_URL}/user/login`, body)
     .then((res)=>{
         localStorage.setItem("token", res.data.token)
         clear()
+        setIsLoading(false)
         goToRecipesList(history)
         setRightButtonText("Logout")
+       
     })
-    .catch((err)=>alert(err.response.data.message))
+    .catch((err)=>{
+        setIsLoading(false)
+        alert(err.response.data.message)
+    
+    })
 
 }
-export const signUP = (body, clear, history, setRightButtonText) => {
-    axios.post(`${BASE_URL}/user/sigup`, body)
+export const signUP = (body, clear, history, setRightButtonText, setIsLoading) => {
+    setIsLoading(true)
+    axios.post(`${BASE_URL}/user/signup`, body)
     .then((res)=>{
         localStorage.setItem("token", res.data.token)
         clear()
+        setIsLoading(false)
         goToRecipesList(history)
         setRightButtonText("Logout")
     })
-    .catch((err)=>alert(err.response.data.message))
+    .catch((err)=>{
+        setIsLoading(false)
+        alert(err.response.data.message)
+    
+    })
 
 }
