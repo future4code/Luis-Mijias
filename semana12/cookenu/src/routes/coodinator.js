@@ -11,7 +11,7 @@ export const goToAddRecipes = (history) => {
     history.push("/adicionar-receita")
 }
 
-export const gotToRecipeDetail = (history,id) => {
+export const goToRecipeDetail = (history,id) => {
     history.push(`/detalhe/${id}`)
 }
 

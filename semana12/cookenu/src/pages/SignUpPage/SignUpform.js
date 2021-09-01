@@ -2,14 +2,15 @@ import { Button, TextField } from "@material-ui/core"
 import { useHistory } from "react-router-dom"
 import { InputsContainer , SignUpFormContainer } from './styled'
 import useForm from '../../hooks/useForm'
+import { signUP } from "../../services/user"
 
-const SignUpForm = () => {
+const SignUpForm = ({setRightButtonText}) => {
     const history = useHistory()
     const [form, onChange, clear] = useForm({ name: '', email: '', password: ''})
 
     const onSubmitForm = (event) => {
         event.preventDefault()
-        console.log(form)
+       signUP(form, clear, history, setRightButtonText)
     }
 
 

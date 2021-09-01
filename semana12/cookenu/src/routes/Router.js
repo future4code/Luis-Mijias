@@ -1,6 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import Header from '../components/Header/Header'
+import { Switch, Route } from 'react-router-dom'
 import AddRecipesPage from '../pages/AddRecipesPage/AddRecipesPage'
 import ErrorPage from '../pages/ErrorPage/ErrorPage'
 import LoginPage from '../pages/LoginPage/LoginPage'
@@ -8,17 +7,16 @@ import RecipeDetailPage from '../pages/RecipeDetailPage/RecipeDetailPage'
 import RecipesListPage from '../pages/RecipesListPage/RecipesListPage'
 import SignUpPage from '../pages/SignUpPage/SignUpPage'
 
-const Router = () => {
-    return (
-        <BrowserRouter>
-            <Header/>
+const Router = ({ setRightButtonText }) => {
+    return (       
+            
                 <Switch>
                 <Route exact path="/login">
-                    <LoginPage />
+                    <LoginPage setRightButtonText={setRightButtonText}/>
                 </Route> 
 
                 <Route exact path="/cadastro" >
-                    <SignUpPage/>
+                    <SignUpPage setRightButtonText={setRightButtonText}/>
                 </Route>
 
                 <Route exact path="/">
@@ -38,7 +36,7 @@ const Router = () => {
                 </Route>
 
             </Switch>
-        </BrowserRouter>
+      
     )
 }
 
